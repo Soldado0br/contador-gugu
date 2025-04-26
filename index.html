@@ -8,13 +8,38 @@
 <style>
          body{
             text-align:center}
+            
         </style>
     </head>
 <body>
     <p>0</p><br>
 <button onclick="acrecentar()">mais</button>
 
+<p id="contador2">0</p><br>
+    <button onclick="acrecentar2()">Mais (Contador 2)</button>
+ <!-- Contador 3 -->
+ <p id="contador3">0</p>
+ <button onclick="incrementar3()">Mais (Contador 3)</button>
 
+ <!-- Contador 4 -->
+ <p id="contador4">0</p>
+ <button onclick="incrementar4()">Mais (Contador 4)</button>
+
+ <!-- Contador 5 -->
+ <p id="contador5">0</p>
+ <button onclick="incrementar5()">Mais (Contador 5)</button>
+
+ <!-- Contador 6 -->
+ <p id="contador6">0</p>
+ <button onclick="incrementar6()">Mais (Contador 6)</button>
+
+ <!-- Contador 7 -->
+ <p id="contador7">0</p>
+ <button onclick="incrementar7()">Mais (Contador 7)</button>
+
+ <!-- Contador 8 -->
+ <p id="contador8">0</p>
+ <button onclick="incrementar8()">Mais (Contador 8)</button>
 
 
 <script>
@@ -27,9 +52,11 @@
     function mostrar(){
        document.querySelector('p') .innerText= numero
     }
-    
-    
-
+    function acrecentar2() {
+            numero2++;
+            document.querySelector('#contador2').innerText = numero2;
+        }
+        var numero2 =0
     function acrecentar() {
         numero++;
         const pElement = document.querySelector('p');
@@ -38,7 +65,41 @@
         // Change background color dynamically
         document.body.style.backgroundColor = numero % 2 === 0 ? 'lightblue' : 'lightgreen'; // Example: alternate colors
     }
+    function incrementar3() {
+            contador3++;
+            document.getElementById('contador3').innerText = contador3;
+        }
 
+        function incrementar4() {
+            contador4++;
+            document.getElementById('contador4').innerText = contador4;
+        }
+
+        function incrementar5() {
+            contador5++;
+            document.getElementById('contador5').innerText = contador5;
+        }
+
+        function incrementar6() {
+            contador6++;
+            document.getElementById('contador6').innerText = contador6;
+        }
+
+        function incrementar7() {
+            contador7++;
+            document.getElementById('contador7').innerText = contador7;
+        }
+
+        function incrementar8() {
+            contador8++;
+            document.getElementById('contador8').innerText = contador8;
+        }
+        let contador3 = 0;
+        let contador4 = 0;
+        let contador5 = 0;
+        let contador6 = 0;
+        let contador7 = 0;
+        let contador8 = 0; 
     </script>
     
     </body>
