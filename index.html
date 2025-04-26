@@ -1,21 +1,29 @@
 <DOCTYPE html>
     <h1>contador</h1>
     <head>
+        
 <title>contador</title>
+<style>
+         body{
+            text-align:center}
+        </style>
     </head>
 <body>
     <p>0</p><br>
 <button onclick="acrecentar()">mais</button>
-<style>
 
-</style>
+
+
 
 <script>
-    
-    function acrecentar(){
-        n++
-        const.p= document.querySelector("p").innerText=n+1
+    var numero=0;
 
+    function acrecentar(){
+        numero++
+         document.querySelector('p').innerText= numero
+    }
+    function mostrar(){
+       document.querySelector('p') .innerText= numero
     }
 
     </script>
