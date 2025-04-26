@@ -45,18 +45,20 @@
 <script>
     var numero=0;
 
-    function acrecentar(){
-        numero++
-         document.querySelector('p').innerText= numero
-    }
+   
     function mostrar(){
        document.querySelector('p') .innerText= numero
     }
     function acrecentar2() {
             numero2++;
             document.querySelector('#contador2').innerText = numero2;
+           // Change background color dynamically
+        document.body.style.backgroundColor = numero % 2 === 0 ? 'gray' : 'white'; // Example: alternate colors
         }
+
+        
         var numero2 =0
+
     function acrecentar() {
         numero++;
         const pElement = document.querySelector('p');
@@ -100,6 +102,42 @@
         let contador6 = 0;
         let contador7 = 0;
         let contador8 = 0; 
+        
+
+        function incrementar3() {
+            contador3++;
+            document.getElementById('contador3').innerText = contador3;
+            document.body.style.backgroundColor = 'lightcoral'; // Cor para o contador 3
+        }
+
+        function incrementar4() {
+            contador4++;
+            document.getElementById('contador4').innerText = contador4;
+            document.body.style.backgroundColor = 'yellow'; // Cor para o contador 4
+        }
+
+        function incrementar5() {
+            contador5++;
+            document.getElementById('contador5').innerText = contador5;
+            document.body.style.backgroundColor = 'lightsalmon'; // Cor para o contador 5
+        }
+
+        function incrementar6() {
+            contador6++;
+            document.getElementById('contador6').innerText = contador6;
+            document.body.style.backgroundColor = 'lightpink'; // Cor para o contador 6
+        }
+        function incrementar7() {
+            contador7++;
+            document.getElementById('contador7').innerText = contador7;
+            document.body.style.backgroundColor = 'lightseagreen'; // Cor para o contador 7
+        }
+
+        function incrementar8() {
+            contador8++;
+            document.getElementById('contador8').innerText = contador8;
+            document.body.style.backgroundColor = 'lightsteelblue'; // Cor para o contador 8
+        }
     </script>
     
     </body>
