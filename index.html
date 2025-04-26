@@ -25,6 +25,17 @@
     function mostrar(){
        document.querySelector('p') .innerText= numero
     }
+    
+    
+
+    function acrecentar() {
+        numero++;
+        const pElement = document.querySelector('p');
+        pElement.innerText = numero;
+
+        // Change background color dynamically
+        document.body.style.backgroundColor = numero % 2 === 0 ? 'lightblue' : 'lightgreen'; // Example: alternate colors
+    }
 
     </script>
     
